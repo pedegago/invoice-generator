@@ -1,0 +1,22 @@
+{
+    "name": "pablo-david-invoice-generator",
+    "version": "1.0.0",
+    "description": "LocalAdventures exercise for applying to a frontend open position.",
+    "main": "index.js",
+    "author": "@pedegago",
+    "license": "MIT",
+    "scripts": {
+        "dev": "next",
+        "start": "next start",
+        "build": "next build"
+    },
+    "dependencies": {
+        "next": "^12.2.3",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0"
+    },
+    "devDependencies": {
+        "prettier": "^2.7.1",
+        "sass": "^1.54.1"
+    }
+}

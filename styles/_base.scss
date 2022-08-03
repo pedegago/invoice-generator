@@ -1,0 +1,16 @@
+@use "./variables";
+
+body {
+    font-family: "Lexend Deca", sans-serif;
+    color: variables.$blue-5;
+}
+
+#__next {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    main {
+        margin-bottom: auto;
+    }
+}
