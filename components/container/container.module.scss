@@ -1,5 +1,5 @@
-@use "../../styles/variables";
-@use "../../styles/mixin";
+@use "../../styles/utils/variables";
+@use "../../styles/utils/mixin";
 
 .container {
     margin-right: auto;
@@ -8,8 +8,8 @@
     padding-left: 20px;
     width: 100%;
 
-    @each $size, $i in $breakpoints {
-        @include media($size) {
+    @each $size, $i in variables.$breakpoints {
+        @include mixin.media($size) {
             max-width: $i;
         }
     }

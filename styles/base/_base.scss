@@ -1,0 +1,12 @@
+@use "../utils/variables";
+
+body {
+    font-family: "Lexend Deca", sans-serif;
+    color: variables.$blue-2;
+}
+
+button {
+    &:focus:not(:focus-visible) {
+        outline: 0;
+    }
+}

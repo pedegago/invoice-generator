@@ -1,4 +1,21 @@
-@use "../../styles/variables";
+@use "../../styles/utils/variables";
 
 .button {
+    transition: all 0.3s ease-in-out;
+    border-radius: variables.$border-radius;
+    font-weight: 500;
+    font-size: 15px;
+    color: white;
+    background: variables.$orange-2;
+    padding: 16px 31px;
+
+    &:hover {
+        opacity: 0.4;
+    }
+
+    &:focus,
+    &:active {
+        background: variables.$orange-3;
+        opacity: 1;
+    }
 }

@@ -1,0 +1,32 @@
+@use "../../styles/utils/variables";
+
+.input {
+    border: 1px dashed transparent;
+    color: variables.$blue-3;
+    font-weight: 500;
+    outline: 0;
+    background: transparent;
+
+    &:hover,
+    &:focus {
+        border-color: variables.$orange-1;
+    }
+
+    &::placeholder {
+        color: variables.$blue-05;
+    }
+
+    &:required::placeholder {
+        color: variables.$red-1;
+    }
+}
+
+.input-sm {
+    font-size: 14.4px;
+    font-weight: 400;
+}
+
+.input-lg {
+    font-size: 19px;
+    font-weight: 600;
+}

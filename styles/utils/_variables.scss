@@ -1,0 +1,25 @@
+$breakpoints: (
+    sm: 640px,
+    md: 768px,
+    lg: 1024px,
+    xl: 1280px,
+);
+
+$shadow: rgb(203 214 226) 0px 2px 2px 1px;
+$shadow-lg: rgb(0 0 0 / 50%) 0px 0.5em 1.5em -0.5em;
+
+$border-radius: 3px;
+$border-radius-full: 50%;
+
+$blue-0: #f2f5f8;
+$blue-05: #7c98b6;
+$blue-1: #425b76;
+$blue-2: #2e475d;
+$blue-3: #2d3e50;
+$green-0: #0b8484;
+$orange-0: #fd8f5f;
+$orange-1: #ff7a59;
+$orange-2: #ff5c35;
+$orange-3: #d44325;
+$red-0: #f2545b;
+$red-1: #ef3b49;

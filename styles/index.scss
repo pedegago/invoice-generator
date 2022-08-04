@@ -1,5 +1,5 @@
-@import "./reset";
-@import "./base";
+@use "./base/reset";
+@use "./base/base";
 
 *,
 *::before,

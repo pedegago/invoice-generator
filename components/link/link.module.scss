@@ -1,0 +1,9 @@
+@use "../../styles/utils/variables";
+
+.link {
+    color: variables.$green-0;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}

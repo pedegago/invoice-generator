@@ -1,0 +1,29 @@
+{
+    "short_name": "Invoice Generator",
+    "name": "Invoice Generator",
+    "description": "The best online invoice generator.",
+    "icons": [
+        {
+            "src": "/images/icon-72.png",
+            "type": "image/png",
+            "sizes": "72x72"
+        },
+        {
+            "src": "/images/icon-192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "/images/icon-512.png",
+            "type": "image/png",
+            "sizes": "512x512",
+            "purpose": "any maskable"
+        }
+    ],
+    "scope": "/",
+    "start_url": "/",
+    "display": "standalone",
+    "orientation": "portrait",
+    "background_color": "#ffffff",
+    "theme_color": "#425b76"
+}

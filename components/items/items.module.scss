@@ -1,0 +1,91 @@
+@use "../../styles/utils/variables";
+
+.items {
+    &:hover .add {
+        max-height: 44px;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    thead {
+        background: variables.$blue-1;
+    }
+
+    th,
+    td {
+        &:nth-child(3),
+        &:last-child {
+            input {
+                text-align: center;
+            }
+        }
+    }
+
+    th {
+        padding: 0.5em 0.9em;
+        font-weight: 500;
+
+        input {
+            color: white !important;
+        }
+    }
+
+    td {
+        position: relative;
+        padding: 16px;
+        overflow: hidden;
+    }
+
+    tbody {
+        tr {
+            &:hover {
+                button {
+                    opacity: 1;
+                    transform: translate(-2px, -50%);
+                }
+            }
+
+            &:not(:last-child) {
+                border-bottom: 1px solid variables.$blue-1;
+            }
+
+            &:nth-child(even) {
+                background: variables.$blue-0;
+            }
+        }
+
+        button {
+            position: absolute;
+            right: 0;
+            opacity: 0;
+            top: 50%;
+            width: 24px;
+            height: 24px;
+            border-radius: variables.$border-radius-full;
+            transform: translate(20px, -50%);
+            transition: transform 0.3s ease 0s, opacity 0.3s ease 0s;
+        }
+    }
+}
+
+.add {
+    background: variables.$orange-0;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-height: 0px;
+    height: 44px;
+    overflow: hidden;
+    font-weight: 600;
+    will-change: max-height;
+    transition: max-height 0.3s ease 0s;
+    z-index: 1;
+
+    span {
+        padding: 0.5em 0px;
+    }
+}
