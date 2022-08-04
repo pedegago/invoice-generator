@@ -1,3 +1,4 @@
+import Seo from "../components/seo/Seo";
 import Container from "../components/container/Container";
 import Heading from "../components/heading/Heading";
 import Options from "../components/options/Options";
@@ -12,6 +13,13 @@ import style from "../styles/pages/index.module.scss";
 function Index() {
     return (
         <main>
+            <Seo
+                appName="LocalAdventures"
+                domain="https://invoice-generator-phi.vercel.app"
+                title="Free Invoice Template Generator"
+                description="Create an invoice template for your business using HubSpot's free invoice template generator tool. Send the right billing document to your customers!"
+                image="https://www.hubspot.com/hubfs/assets/hubspot.com/buzz/HubSpotOpenGraph.png"
+            />
             <Container tag="section" className={style.title}>
                 <Heading level="1">Invoice Template Generator</Heading>
                 <p>

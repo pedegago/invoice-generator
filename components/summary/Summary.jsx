@@ -74,9 +74,11 @@ function Summary({ className }) {
                     <tr>
                         <td>Total:</td>
                         <td>
-                            {getSubtotal() +
+                            {(
+                                getSubtotal() +
                                 (state.tax * 1 || 0) -
-                                (state.discount * 1 || 0)}
+                                (state.discount * 1 || 0)
+                            ).toFixed(2)}
                         </td>
                     </tr>
                 </tbody>
